@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='main.css')}}">
+	<title>Data form</title>
+</head>
+<style>
+  body{
+    background-color:#5cfad8;
+  }
+  </style>
+<body >
+	<center><a><img src="static/asap.png" height="110px" width="120px"></a></center>
+	<h2><div style='text-align:center'><font><b>Music</b></font></div></h2>
+	<hr>
+	</br>
+	<h2><div style='text-align:center'>Enter your Details</div></h2>
+	</br>
+	<div class ='container'>
+	<div class='row'>
+	<div class ='col-6'>
+		<form method='POST' action='/predict'>
+			<div class='form-group'>
+				<label for ='name'><p class='font-weight-bold'>_Name_:</p>></label>
+				<input type="text" name="name">
+			</div>
+			<div class='form-group'>
+				<label for ='age'><p class='font-weight-bold'>__Age__:</p>></label>
+				<input type="text" name="age">
+			</div>
+			<div class='form-group'>
+				<label for ='gen'><p class='font-weight-bold'>Gender:</p>></label>
+				<input type="text" name="gen">
+				<small id='genderhelp' class='form-text text-muted'>enter 1 if male and 0 if female</small>
+			</div>
+			<input class='btn btn-primary' type='submit' value='Submit'>
+		</form>
+	</div>
+	</div>
+	</div>
+
+</body>
+</html>

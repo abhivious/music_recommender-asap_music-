@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<title>Data form</title>
+</head>
+<body background='aot.jpg'>
+	<h1><div style='text-align:center'><font color="red">ASAPMusic</font></div></h1>
+	<hr>
+	</br>
+	<h2><div style='text-align:center'>Enter your Details</div></h2>
+	</br>
+	<div class ='container'>
+	<div class='row'>
+	<div class ='col-6'>
+		<form method='POST' action='/predict'>
+			<div class='form-group'>
+				<label for ='name'><p class='font-weight-bold'>Name</p>></label>
+				<input type="text" name="name">
+			</div>
+			<div class='form-group'>
+				<label for ='age'><p class='font-weight-bold'>Age</p>></label>
+				<input type="text" name="age">
+			</div>
+			<div class='form-group'>
+				<label for ='gen'><p class='font-weight-bold'>Gender</p>></label>
+				<input type="text" name="gen">
+				<small id='genderhelp' class='form-text text-muted'>enter 1 if male and 0 if female</small>
+			</div>
+			<input class='btn btn-primary' type='submit' value='Submit'>
+		</form>
+	</div>
+	</div>
+	</div>
+
+</body>
+</html>
